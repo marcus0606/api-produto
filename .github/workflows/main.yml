@@ -33,5 +33,6 @@ jobs:
           # Path to the Dockerfile
           file: ./src/Dockerfile
           push: true
-          tags: 
+          tags: |
             marvin666/api-bootcamp-produto:latest
+            marvin666/api-bootcamp-produto:${{github.run_number}}
