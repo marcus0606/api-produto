@@ -60,7 +60,6 @@ jobs:
           method: kubeconfig
           # Kubernetes Config
           kubeconfig: ${{secrets.K8S_CONFIG}}
-          # If your kubeconfig has multiple contexts use this field to use a specific context, otherwise the default one would be chosen
 
       - name: Deploy MongoDB
         uses: Azure/k8s-deploy@v1.3
