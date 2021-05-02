@@ -35,4 +35,3 @@ jobs:
           push: true
           tags: 
             marvin666/api-bootcamp-produto:latest
-            marvin666/api-bootcamp-produto:${{github.run_number}}
