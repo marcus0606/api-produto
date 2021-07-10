@@ -1,11 +1,19 @@
 ---
 swagger: "2.0"
 info:
-  description: "API de Cadastro de Produtos"
-  version: "1.0.0"
-  title: "Cadastro de Produtos"
+  description: "API de Cadastro de Produtos - versão Beta"
+  version: "3.0.0"
+  title: "Cadastro de Produtos - Nova versão"
   contact:
-    email: "fabricio@veronez.dev"
+    email: "marvin01@uol.com.br"
+host: virtserver.swaggerhub.com
+basePath: /marcus0606/IOTTest/3.0.0
+schemes:
+- https
+consumes:
+- application/json
+produces:
+- application/json
 paths:
   /read:
     get:
