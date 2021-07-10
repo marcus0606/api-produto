@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: api
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: api
@@ -33,5 +33,5 @@ spec:
   ports:
     - port: 80
       targetPort: 8080
-      nodePort: 30000
+      nodePort: 30001
   type: LoadBalancer
