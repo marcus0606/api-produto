@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api
+  name: api-serv
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
-      app: api
+      app: api-serv
   template:
     metadata:
       labels:
-        app: api
+        app: api-serv
     spec:
       containers:
-        - name: api
+        - name: api-serv
           image: marvin666/api-bootcamp-produto:v8
           ports: 
           - containerPort: 8080
@@ -29,7 +29,7 @@ metadata:
   name: api-service
 spec:
   selector:
-    app: api
+    app: api-serv
   ports:
     - port: 80
       targetPort: 8080
