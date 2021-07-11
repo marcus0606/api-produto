@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: api-serv
-          image: marvin666/api-bootcamp-produto:v8
+          image: marvin666/api-bootcamp-produto:v9
           ports: 
           - containerPort: 8080
           env:
